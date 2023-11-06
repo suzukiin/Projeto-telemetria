@@ -1,8 +1,7 @@
 const express = require('express')
 const router = express.Router()
+const controller = require('../controller/mqtt-controller')
 
-router.get('/', (req, res, next)=>{
-    res.status(200).send({msg:"Hello"})
-})
+router.get('/', controller.get)
 
 module.exports = router
