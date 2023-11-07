@@ -2,6 +2,7 @@
 
 ## Descrição
 Esta aplicação é um projeto para desenvolvimento de uma telemetria.
+- npm start : inicia a aplicação
 
 #### Explicação do `Fluxo`
 - Primeiro é inicializado o serviço na porta 3000 e o broker `mqtt` na porta padrão 1883.
