@@ -1,6 +1,6 @@
 'use strict'
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const schema = new Schema({
     topic:{
@@ -14,4 +14,4 @@ const schema = new Schema({
     }
 })
 
-module.exports = mongoose.model('mqtt', schema)
+module.exports = mongoose.model('mqtt', schema);
