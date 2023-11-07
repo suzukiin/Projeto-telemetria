@@ -8,6 +8,7 @@ const mqttModel = require('./models/mqtt')
 
 //rotas
 const appRoute = require('./routes/app-route')
+const mqtt = require('./models/mqtt')
 app.use('/', appRoute)
 
 app.listen(3000, ()=>{
