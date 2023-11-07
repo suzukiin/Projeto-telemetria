@@ -1,10 +1,9 @@
 var last = document.getElementById("last");
-var requestURL = "http://localhost:3000/";
 var request = new XMLHttpRequest();
 
 
 setInterval(() => {
-    request.open("GET", "http://localhost:3000/");
+    request.open("GET", "http://localhost:3000/last");
     request.responseType = "json";
     request.send();
     request.onload = function(){

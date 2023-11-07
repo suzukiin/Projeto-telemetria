@@ -10,7 +10,7 @@ router.get('/all', async(req, res, next)=>{
 })
 
 //rota para pegar o ultimo dado enviado para o Banco de Dados
-router.get('/', async(req, res, next)=>{
+router.get('/last', async(req, res, next)=>{
     let data = await mqttModel.findOne().sort({ field: 'asc', _id: -1 })
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Request-Width, Content-Type, Accept");
