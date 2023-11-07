@@ -11,6 +11,11 @@ const schema = new Schema({
     message:{
         type: String,
         required: true,
+    },
+
+    data: {
+        type: Date,
+        default: Date.now()
     }
 })
 
