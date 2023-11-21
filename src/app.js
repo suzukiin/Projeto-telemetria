@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://127.0.0.1:27017/');
+mongoose.connect('mongodb+srv://lucas:lucas1411@apicluster.bqlexmj.mongodb.net/');
 const mqtt = require('mqtt')
 const client = mqtt.connect('mqtt://localhost:1883');
 

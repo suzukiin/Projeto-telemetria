@@ -6,7 +6,9 @@ const mqttModel = mongoose.model('mqtt');
 //rota para pegar todos os dados do banco
 router.get('/all', async(req, res, next)=>{
     let data = await mqttModel.find();
-    res.status(200).send({data});
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Request-Width, Content-Type, Accept");
+    res.status(200).json(data);
 })
 
 //rota para pegar o ultimo dado enviado para o Banco de Dados
